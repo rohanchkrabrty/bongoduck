@@ -60,13 +60,14 @@ let selectedInstrument = Instruments.BONGO;
 
 window.onload = (event) => {
     //check for pc or mobile
-    if (getComputedStyle(document.body).getPropertyValue("--type") === "desktop") {
+    if (getComputedStyle(document.body).getPropertyValue("--type").includes("desktop")) {
         lowLag.init({
             'urlPrefix': '../sounds/',
             'debug': 'none'
         });
         Object.values(SoundMap).forEach(sound => lowLag.load([`${sound}.mp3`, `${sound}.wav`], sound));
         addListeners();
+        console.log("loaded")
     }
 };
 function addListeners() {
