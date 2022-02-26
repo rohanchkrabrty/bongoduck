@@ -77,13 +77,14 @@ function addListeners() {
             e.preventDefault();
         })
     });
-    ["mousedown", "mouseup"].forEach(type => {
+    ["mousedown", "mouseup", "contextmenu"].forEach(type => {
         window.addEventListener(type, e => {
             const key = ClickKeyMap[e.which];
             if (key) handler(key.toUpperCase(), e.type === "mousedown", true);
             e.preventDefault();
         })
     });
+    // window.addEventListener("contextmenu", e => e.preventDefault());
 }
 
 function handler(key, active = false, isMouse = false) {
