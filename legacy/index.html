@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bongo Duck</title>
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="./meta/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Hit the bongos like Bongo Cat!">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://bongo.cat">
+  <meta name="twitter:title" content="Bongo Cat">
+  <meta name="twitter:description" content="Hit the bongos like Bongo Cat!">
+  <meta name="twitter:image" content="https://bongo.cat/meta/thumbnail.png">
+  <meta name="twitter:image:alt" content="A cat hitting bongos">
+  <meta name="twitter:creator" content="Externalizable">
+  <meta property="og:title" content="Bongo Cat">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bongo.cat/meta/thumbnail.png">
+  <meta property="og:url" content="https://bongo.cat">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/lowLag.js"></script>
+  <script src="./js/sm2/js/soundmanager2-nodebug-jsmin.js"></script>
+  <script src="./js/core.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="keys">
+      <div>
+        <span i18n="Bongos">Bongos</span>
+        <span class="key">A</span>
+        <span class="key">D</span>
+      </div>
+      <div>
+        <span i18n="Cymbal">Cymbal</span>
+        <span class="key">C</span>
+      </div>
+      <div>
+        <span i18n="Cowbell">Cowbell</span>
+        <span class="key">F</span>
+      </div>
+      <div>
+        <span i18n="Tambourine">Tambourine</span>
+        <span class="key">B</span>
+      </div>
+      <div>
+        <span i18n="Meow">Meow</span>
+        <span i18n="SPACE" class="key key-wide">SPACE</span>
+      </div>
+      <div>
+        <span i18n="Piano">Piano</span>
+        <span class="key">1</span> ...
+        <span class="key">9</span>
+        <span class="key">0</span>
+      </div>
+      <div>
+        <span i18n="Marimba">Marimba</span>
+        <span class="key">Q</span>
+        <span class="key">W</span> ...
+        <span class="key">P</span>
+      </div>
+    </div>
+  </header>
+  <div id="container">
+    <hr />
+    <div class="cat">
+      <div id="head"></div>
+      <div id="mouth"></div>
+      <div id="paw-left"></div>
+      <div id="paw-right"></div>
+    </div>
+    <div class="instruments">
+      <div id="bongo"></div>
+      <div id="keyboard"></div>
+      <div id="cymbal"></div>
+      <div id="marimba"></div>
+      <div id="tambourine"></div>
+      <div id="cowbell"></div>
+    </div>
+  </div>
+  <div id="touch">
+    <div id="layers">
+      <select id="select-instrument">
+        <option value="layer-bongo" i18n="Bongos" selected>Bongos</option>
+        <option value="layer-keyboard" i18n="Keyboard">Keyboard</option>
+        <option value="layer-meow" i18n="Meow">Meow</option>
+        <option value="layer-cymbal" i18n="Cymbal">Cymbal</option>
+        <option value="layer-marimba" i18n="Marimba">Marimba</option>
+        <option value="layer-tambourine" i18n="Tambourine">Tambourine</option>
+        <option value="layer-cowbell" i18n="Cowbell">Cowbell</option>
+      </select>
+    </div>
+    <div id="taps">
+      <div class="tap" id="tap-left"><span i18n="LEFT">LEFT</span></div>
+      <div class="tap" id="tap-right"><span i18n="RIGHT">RIGHT</span></div>
+      <div class="tap" id="tap-space"><span i18n="MEOW">MEOW</span></div>
+      <div id="tap-keys">
+        <div>
+          <div class="tap" id="tap-1"><span>1</span></div>
+          <div class="tap" id="tap-2"><span>2</span></div>
+          <div class="tap" id="tap-3"><span>3</span></div>
+          <div class="tap" id="tap-4"><span>4</span></div>
+          <div class="tap" id="tap-5"><span>5</span></div>
+        </div>
+        <div>
+          <div class="tap" id="tap-6"><span>6</span></div>
+          <div class="tap" id="tap-7"><span>7</span></div>
+          <div class="tap" id="tap-8"><span>8</span></div>
+          <div class="tap" id="tap-9"><span>9</span></div>
+          <div class="tap" id="tap-0"><span>0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span i18n="other-lang"><a href="/?lang=ca">En català</a></span>
+    <span i18n="courtesy">Art courtesy of <a href="https://twitter.com/StrayRogue"
+        target="_blank">@StrayRogue</a></span>
+    <span i18n="meme">Meme by <a href="https://twitter.com/DitzyFlama" target="_blank">@DitzyFlama</a></span>
+    <span i18n="website">Website by <a href="https://erics.site/?utm_source=bongo.cat" target="_blank">Eric Huber</a>
+      (<a href="https://twitter.com/Externalizable" target="_blank">@Externalizable</a>)</span>
+  </footer>
+</body>
+
+</html>
